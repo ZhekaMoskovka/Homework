@@ -5,8 +5,7 @@ public class Homework1_4 {
         Computer[] computers = new Computer[5];
 
         for (int i = 0; i < 5; i++) {
-            Computer computer = new Computer(i);
-            computers[i] = computer;
+            computers[i] = new Computer(i);
         }
         for (int i = 0; i < 5; i++) {
             System.out.println(computers[i].getId());
