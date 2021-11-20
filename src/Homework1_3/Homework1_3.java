@@ -5,17 +5,19 @@ import java.util.Scanner;
 public class Homework1_3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Book book = new Book();
         System.out.print("Введите название книги: ");
-        String title = input.next();
-        book.title.setTitle(title);
+        String title_input = input.next();
+        Title title = new Title();
+        title.setTitle(title_input);
         System.out.print("Введите автора книги: ");
-        String author = input.next();
-        book.author.setAuthor(author);
+        String author_input = input.next();
+        Author author = new Author();
+        author.setAuthor(author_input);
         System.out.print("Введите содержание книги: ");
-        String content = input.next();
-        book.content.setContent(content);
-
+        String content_input = input.next();
+        Content content = new Content();
+        content.setContent(content_input);
+        Book book = new Book(title, author, content);
         System.out.println("Данные по книге: ");
         book.show();
     }
