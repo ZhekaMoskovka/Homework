@@ -1,18 +1,18 @@
 package Homework2_2;
 
-class Car {
-    int year;
-    String color;
+public class Car {
+    public int year;
+    public String color;
 
-    Car(int year) {
+    public Car(int year) {
         this.year = year;
     }
 
-    Car(int year, String color) {
+    public Car(int year, String color) {
         this.year = year;
         this.color = color;
     }
 
-    Car() {
+    public Car() {
     }
 }

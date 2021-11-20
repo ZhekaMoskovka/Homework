@@ -1,29 +1,29 @@
 package Homework2_4;
 
-class Car {
+public class Car {
     int year;
     double speed;
     int weight;
     String color;
 
-    Car() {
+    public Car() {
     }
 
-    Car(int year) {
+    public Car(int year) {
         this.year = year;
     }
 
-    Car(int year, double speed) {
+    public Car(int year, double speed) {
         this(year);
         this.speed = speed;
     }
 
-    Car(int year, double speed, int weight) {
+    public Car(int year, double speed, int weight) {
         this(year, speed);
         this.weight = weight;
     }
 
-    Car(int year, double speed, int weight, String color) {
+    public Car(int year, double speed, int weight, String color) {
         this(year, speed, weight);
         this.color = color;
     }
