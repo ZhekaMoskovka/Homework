@@ -7,7 +7,7 @@ public class Homework3_2 {
         Scanner input = new Scanner(System.in);
         Pupil []pupils = new Pupil[4];
         for (int i = 0; i < 4; i++) {
-            System.out.print("Введите успеваемость ученика №" + (i + 1) + "(плохая, хорошая, отличная): ");
+            System.out.printf("Введите успеваемость ученика №%d (плохая, хорошая, отличная): ", i+1);
             String academicPerformance = input.next();
             if (academicPerformance.equals("плохая")) {
                 pupils[i] = new BadPupil();

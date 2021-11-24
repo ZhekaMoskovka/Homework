@@ -1,25 +1,23 @@
 package Homework3_2;
 
 public class ClassRoom {
-    public Pupil []pupil = new Pupil[4];
+    public Pupil []pupils = new Pupil[4];
 
-    public ClassRoom(Pupil pupil[]) {
-        for (int i = 0; i < 4; i++) {
-            this.pupil[i] = pupil[i];
-        }
+    public ClassRoom(Pupil pupils[]) {
+            this.pupils = pupils;
     }
 
     void show() {
         System.out.println("Учеба  чтение  письмо  отдых");
         for (int i = 0; i < 4; i++) {
-            System.out.print("Ученик №" + (i + 1) + " ");
-            if (pupil[i] == null) {
+            System.out.printf("Ученик №%d ", i+1);
+            if (pupils[i] == null) {
                 System.out.print("Ученика нету");
             } else {
-                pupil[i].study();
-                pupil[i].read();
-                pupil[i].write();
-                pupil[i].relax();
+                pupils[i].study();
+                pupils[i].read();
+                pupils[i].write();
+                pupils[i].relax();
             }
             System.out.print("\n");
         }
