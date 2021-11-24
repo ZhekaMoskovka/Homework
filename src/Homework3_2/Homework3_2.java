@@ -5,28 +5,23 @@ import java.util.Scanner;
 public class Homework3_2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        ClassRoom[] classRoom = new ClassRoom[4];
+        Pupil []pupils = new Pupil[4];
         for (int i = 0; i < 4; i++) {
             System.out.print("Введите успеваемость ученика №" + (i + 1) + "(плохая, хорошая, отличная): ");
             String academicPerformance = input.next();
             if (academicPerformance.equals("плохая")) {
-                Pupil pupil = new BadPupil();
-                classRoom[i] = new ClassRoom(pupil);
+                pupils[i] = new BadPupil();
             } else if (academicPerformance.equals("хорошая")) {
-                Pupil pupil = new GoodPupil();
-                classRoom[i] = new ClassRoom(pupil);
+                pupils[i] = new GoodPupil();
+
             } else if (academicPerformance.equals("отличная")) {
-                Pupil pupil = new ExcelentPupil();
-                classRoom[i] = new ClassRoom(pupil);
+                pupils[i] = new ExcelentPupil();
+
             } else {
-                classRoom[i] = new ClassRoom(null);
+                pupils[i] = null;
             }
         }
-        System.out.println("         Учеба  чтение  письмо  отдых");
-        for (int i = 0; i < 4; i++) {
-            System.out.print("Ученик №" + (i + 1));
-            classRoom[i].show();
-            System.out.print("\n");
-        }
+        ClassRoom classRoom = new ClassRoom(pupils);
+        classRoom.show();
     }
 }

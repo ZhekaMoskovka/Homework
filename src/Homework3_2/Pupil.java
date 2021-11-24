@@ -2,6 +2,7 @@ package Homework3_2;
 
 public class Pupil {
 
+
     public void study() {
         System.out.print("5");
     }
