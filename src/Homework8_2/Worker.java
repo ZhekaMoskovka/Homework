@@ -1,15 +1,11 @@
 package Homework8_2;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Worker {
     public String firstName;
     public String secondName;
     public String job;
     public int year;
-    Date date = new Date();
-    SimpleDateFormat formattedDate = new SimpleDateFormat("yyyy");
+    public int date = 2021;
 
     public Worker(String firstName, String secondName, String job, int year) {
         this.firstName = firstName;
@@ -22,7 +18,7 @@ public class Worker {
         return firstName;
     }
 
-    public int experience(){
-        return Integer.valueOf(formattedDate.format(date)) - year;
+    public int experience() {
+        return date - year;
     }
 }

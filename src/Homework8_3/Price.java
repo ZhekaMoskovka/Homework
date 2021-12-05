@@ -14,6 +14,4 @@ public class Price {
     public String getShopName() {
         return shopName;
     }
-
-
 }
