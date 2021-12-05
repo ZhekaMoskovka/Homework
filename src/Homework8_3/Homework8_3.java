@@ -1,7 +1,6 @@
 package Homework8_3;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Scanner;
 
 public class Homework8_3 {
