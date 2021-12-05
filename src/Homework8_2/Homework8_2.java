@@ -15,9 +15,10 @@ public class Homework8_2 {
             throw new WrongYearException();
         }
     }
+
     public static void main(String[] args) {
         int listCapacity = 5;
-        ArrayList <Worker> workers= new ArrayList<>(listCapacity);
+        ArrayList<Worker> workers = new ArrayList<>(listCapacity);
         Scanner input = new Scanner(System.in);
         for (int i = 0; i < listCapacity; i++) {
             System.out.print("Введите имя: ");
@@ -26,7 +27,7 @@ public class Homework8_2 {
             String secondName = input.next();
             System.out.print("Введите название специальности: ");
             String job = input.next();
-            try{
+            try {
                 System.out.print("Введите год начала работы: ");
                 int year = input.nextInt();
                 checkYearFormat(year);
