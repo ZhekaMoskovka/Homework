@@ -48,7 +48,7 @@ public class Homework8_3 {
             double price = input.nextDouble();
             products.add(new Price(productName, shopName, price));
         }
-        products.sort(Comparator.comparing(Price::getShopName));
+        sortArray(products);
         for (int i = 0; i < products.size(); i++) {
             System.out.printf("Название магазина: %s\nНазвание товара: %s\nСтоимость: %f\n\n", products.get(i).shopName, products.get(i).productName, products.get(i).price);
         }

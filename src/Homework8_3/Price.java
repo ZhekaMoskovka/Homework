@@ -10,8 +10,4 @@ public class Price {
         this.shopName = shopName;
         this.price = price;
     }
-
-    public String getShopName() {
-        return shopName;
-    }
 }

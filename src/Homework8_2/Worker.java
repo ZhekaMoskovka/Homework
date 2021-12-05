@@ -14,10 +14,6 @@ public class Worker {
         this.year = year;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
     public int experience() {
         return date - year;
     }
