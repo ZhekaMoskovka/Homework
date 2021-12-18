@@ -12,12 +12,7 @@ public class Homework12_3 {
         return newNums;
     }
     public static int getMinimum (LinkedList<Integer> nums) {
-        int min = nums.get(0);
-        for (int i = 0; i < nums.size() - 1; i++) {
-            if (nums.get(i + 1) < min) {
-                min = nums.get(i + 1);
-            }
-        }
+        int min = nums.stream().min((x, y) -> Integer.compare(x, y)).get();
         return min;
     }
     public static void main(String[] args) {
