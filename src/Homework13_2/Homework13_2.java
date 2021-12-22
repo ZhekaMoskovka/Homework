@@ -7,11 +7,11 @@ public class Homework13_2 {
         try {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in, "Cp866"));
             PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream("D:\\Женя\\JAVA\\Homework\\src\\Homework13_2\\test.txt"), "Cp866"));
-            String s;
+            String string;
             do {
-                s = bufferedReader.readLine();
-                printWriter.println(s);
-            } while (!s.equals("q"));
+                string = bufferedReader.readLine();
+                printWriter.println(string);
+            } while (!string.equals("q"));
             bufferedReader.close();
             printWriter.flush();
             printWriter.close();
