@@ -46,7 +46,13 @@ public class Homework20_5 {
 
                 System.out.println(id + " " + birthday + " " + telephoneNumber);
             }
-        } catch (SQLException e) {
+            resultSet.close();
+            contactData.close();
+            birthdayDateIfNotMarried.close();
+            birthdayDateIfManager.close();
+            sqlInitialization.connection.close();
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
 
